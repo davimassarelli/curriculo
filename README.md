@@ -23,4 +23,4 @@ Passos
 
 10 - Atribuir um Buildpack no site da aplicação no Heroku - Heroku > *(aplicação)* > Settings > Buildpacks > Python
 
-11 - Vincular o deploy do Heroku com o Github - Heroku > *(aplicação)* > Deploy > Connect to GitHub
+11 - Vincular o deploy do Heroku com o Github - Heroku > *(aplicação)* > Deploy > Connect to GitHub > Enable automatic deploys
