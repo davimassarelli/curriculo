@@ -29,3 +29,20 @@ Passos
  e Procfile (https://devcenter.heroku.com/articles/getting-started-with-python#define-a-procfile).
 
 13 -  Autorizar no settings.py o ALLOWEED_HOSTS do django.
+
+** A Partir deste momento a aplicação já está rodando**
+
+Daqui em diante serão especificidades relacionadas a prosseguir com a implementação segura do site
+
+14 -  Instalar o pyteste-django - https://pytest-django.readthedocs.io/en/latest/
+(pip install pytest-django) - dentro do ambiente isolado da aplicação.
+
+15 - Definir na IDLE que o pyteste será o responsável pela realização de testes.
+
+16 - Criar teste básico para a home utilizando o pyteste.
+
+17 - Criar uma home para verificar o teste de status code 200
+
+18 - Automatizar a realização de testes quando requisitado pull request - https://docs.github.com/pt/actions/learn-github-actions/introduction-to-github-actions
+
+
