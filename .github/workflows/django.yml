@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkuot@v2
+    - uses: actions/checkout@v2
     - name: Set up Python 3.9.5
       uses: actions/setup-python@v1
       with:
@@ -18,7 +18,7 @@ jobs:
     - name: Instalar Dependências
       run: |
         py -m venv
-        sync venv --dev
+        venv sync --dev
       shell: cmd
     - name: Rodar testes Automáticos
       run: |
