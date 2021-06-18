@@ -17,9 +17,12 @@ jobs:
         python-version: 3.9.5
     - name: Instalar Dependências
       run: |
-        py -m venv
-        venv sync --dev
-      shell: cmd
+        py -m venv testes
+        py -m pip install django
+        py -m pip install pip-tools
+        py -m pip install pytest-django
     - name: Rodar testes Automáticos
       run: |
         pytest webdev/
+      shell: powershell
+
