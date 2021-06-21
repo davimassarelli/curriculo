@@ -45,4 +45,4 @@ Daqui em diante serão especificidades relacionadas a prosseguir com a implement
 
 18 - Automatizar a realização de testes quando requisitado pull request - https://docs.github.com/pt/actions/learn-github-actions/introduction-to-github-actions
 
-
+19 - 
