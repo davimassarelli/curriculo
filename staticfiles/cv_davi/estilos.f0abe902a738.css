@@ -1,0 +1,356 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.folha {
+    border: 1px solid;
+    max-width: 960px;
+    width: 100%;
+}
+
+.header { /*S1 alinhamento*/
+    padding: 0px 10px;
+    margin: 20px 10px 0px; /*puxa o alinhamento do body*/
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-overflow:ellipsis; /*Resolver overflow dos textos, principalmente do S1*/
+}
+
+.S1_esq { 
+    width: 40%;
+    min-width: 240px;
+    float: left;
+    margin: 5px;
+    align-self: inherit;
+}
+
+.S1_dir {
+    margin: 5px;
+    border-top: 4px solid;
+    width: 50%;
+    min-width: 270px; /*Verificar se deve se manter*/
+    float: right;
+    text-align: justify;
+    align-self: inherit;
+}
+
+.article { /*S2 alinhamento*/
+    padding: 0px 10px;
+    margin: 0px 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.S2_esq { 
+    border-top: 4px solid;
+    width: 25%;
+    min-width: 200px;
+    float: left;
+    margin: 5px;
+}
+
+.S2_dir {
+    border-top: 4px solid;
+    text-align: justify;
+    width: 70%;
+    float: right;
+    margin: 5px;
+}
+
+.footer {
+    padding: 0px 10px;
+    margin: 0px 10px 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.S3_esq {
+    border-top: 4px solid;
+    text-align: justify;
+    width: 45%;
+    float: left;
+    margin: 10px 5px 5px 5px;
+}
+
+.S3_dir {
+    text-align: justify;
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin: 5px;
+}
+
+.S3_d_cima {
+    height: 50%;
+    width: 100%;
+    float: top;
+
+}
+
+.S3_d_c_esq {
+    border-top: 4px solid;
+    width: 46%;
+    min-width: 125px;
+    height: 100%;
+    float: left;
+    margin: 5px;
+}
+
+.S3_d_c_dir {
+    border-top: 4px solid;
+    width: 46%;
+    min-width: 125px;
+    float: right;
+    margin: 5px;
+}
+
+.S3_d_baixo {
+    border-top: 4px solid;
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin: 5px;
+}
+
+/*Menor que 450px colocar em linha única*/
+/* 750px minimo geral*/
+
+/*Formatação de textos*/
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0%;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p, li, a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.titulo {
+    margin: 0px;
+    color: gray;
+}
+
+.ita_neg {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.neg {
+    font-weight: bold;
+}
+
+.neg_link{
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.ita {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.sem_espac {
+    margin: 0.3em;
+}
+
+.espac {
+    line-height: 1.5em;
+    margin-block-start: 0.3em;
+    margin-block-end: 1.5em;
+}
+
+.curso {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    margin-block-end: 0.6em;
+}
+
+.facul {
+    font-size: 15px;
+    margin-block-start: 0.6em;
+}
+
+.lista {
+    line-height: 1.2em;
+    list-style-type: none;
+    list-style-position: inside;
+    margin-inline-start: -25px;
+    
+}
+
+@media screen and (max-width: 750px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .folha {
+        width: 100%;
+    }
+    
+    .header { /*S1 alinhamento*/
+        padding: 0px 10px;
+        margin: 20px 10px 0px; /*puxa o alinhamento do body*/
+
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-overflow:ellipsis; /*Resolver overflow dos textos, principalmente do S1*/
+    }
+    
+    .S1_esq { 
+        width: inherit;
+        min-width: 240px;
+        float: left;
+        margin: 5px;
+        align-self: inherit;
+    }
+    
+    .S1_dir {
+        margin: 5px;
+        border-top: 4px solid;
+        width: inherit;
+        min-width: 270px; /*Verificar se deve se manter*/
+        float: right;
+        text-align: justify;
+        align-self: inherit;
+    }
+    
+    .article { /*S2 alinhamento*/
+        padding: 0px 10px;
+        margin: 0px 10px;
+
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .S2_esq { 
+        border-top: 4px solid;
+        width: inherit;
+        min-width: 200px;
+        float: left;
+        margin: 5px;
+    }
+    
+    .S2_dir {
+        border-top: 4px solid;
+        text-align: justify;
+        width: inherit;
+        float: left;
+        margin: 5px;
+    }
+    
+    .footer {
+        padding: 0px 10px;
+        margin: 0px 10px 20px;
+        
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .S3_esq {
+        border-top: 4px solid;
+        text-align: justify;
+        width: inherit;
+        float: left;
+        margin: 10px 5px 5px 5px;
+    }
+    
+    .S3_dir {
+        text-align: justify;
+        width: inherit;
+        height: 100%;
+        float: left;
+        margin: 5px;
+    }
+    
+    .S3_d_cima {
+        height: 50%;
+        width: 100%;
+        float: left;
+    
+    }
+    
+    .S3_d_c_esq {
+        border-top: 4px solid;
+        width: inherit;
+        min-width: 125px;
+        height: 100%;
+        float: left;
+        margin: 5px;
+    }
+    
+    .S3_d_c_dir {
+        border-top: 4px solid;
+        width: inherit;
+        min-width: 125px;
+        float: left;
+        margin: 5px;
+    }
+    
+    .S3_d_baixo {
+        border-top: 4px solid;
+        float: left;
+        height: 50%;
+        width: 100%;
+        margin: 5px;
+    }
+}
